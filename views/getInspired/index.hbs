@@ -1,0 +1,95 @@
+<div class="hero is-black is-medium hero is-black is-medium get-inspired-head-bg">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <h1 class="title"><span class="has-text-warning"><i class="far fa-lightbulb"></i></span> Get
+                        inspired </h1>
+                    <h2 class="subtitle mt-3"> If you are new to the hobby, don't know any fantasy races or classes, or
+                        just need some examples for reference,
+                        we offer you the possibility to browse the cards of one of the most popular RPG Cards pc games:
+                    </h2>
+                    <p class="is-size-5"><a href="https://playhearthstone.com/" target="_blank"><u>Hearthstone</u></a>
+                        from <a href="https://www.blizzard.com/" target="_blank"><u>Blizzard Entertainment</u></a></p>
+
+                    <h2 class="subtitle mt-3">Surely afterwards you will be ready to start building <a
+                            class="has-text-success" href="/cards/my-deck-of-cards"><span class="has-text-success"><i
+                                    class="fas fa-layer-group"></i></span> your Deck!</a></h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-body my-5">
+
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third is-offset-2">
+                    <h2 class="subtitle mt-3">List of available races in Hearthstone</h2>
+                    <div class="tags">
+                        <span class="tag is-info">Elemental</span>
+                        <span class="tag is-info">Beast</span>
+                        <span class="tag is-info">Demon</span>
+                        <span class="tag is-info">Dragon</span>
+                        <span class="tag is-info">Mech</span>
+                        <span class="tag is-info">Murloc</span>
+                        <span class="tag is-info">Pirate</span>
+                        <span class="tag is-info">Totem</span>
+                    </div>
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input id="theRaceInput" class="input" type="text" placeholder="Race name">
+                        </div>
+                        <div class="control">
+                            <a id="races" class="button is-info is-outlined">
+                                Search by race
+                            </a>
+                        </div>
+                    </div>
+                    <h2 class="subtitle mt-3 mt-5">List of available classes in Hearthstone</h2>
+                    <div class="tags">
+                        <span class="tag is-primary">Demon hunter</span>
+                        <span class="tag is-primary">Druid</span>
+                        <span class="tag is-primary">Hunter</span>
+                        <span class="tag is-primary">Mage</span>
+                        <span class="tag is-primary">Paladin</span>
+                        <span class="tag is-primary">Priest</span>
+                        <span class="tag is-primary">Rogue</span>
+                        <span class="tag is-primary">Shaman</span>
+                        <span class="tag is-primary">Warlock</span>
+                        <span class="tag is-primary">Warrior</span>
+                        <span class="tag is-primary">Neutral</span>
+                    </div>
+
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input id="theClassInput" class="input" type="text" placeholder="Class name">
+                        </div>
+                        <div class="control">
+                            <a id="classes" class="button is-primary is-outlined">
+                                Search by class
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <div class="box empty-card has-background-black has-text-white">
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content mt-2">
+                                    <div id="cards"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>

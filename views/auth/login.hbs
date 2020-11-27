@@ -1,0 +1,25 @@
+<section class="hero is-dark is-large bastion-paswword-bg">
+  <div class="hero-body">
+    <div class="container">
+      <form action="/login" method="POST" id="form">
+        <h2 class="has-text-weight-medium"><span><i class="fas fa-chess-rook"></i>&nbsp</span><span><i class="far fa-user"></i></span> Log in</h2>
+
+        <label class="has-text-white" for="username">Username</label>
+        <input type="text" name="username" required="true">
+
+        <label class="has-text-white" for="password">Password</label>
+        <input type="password" name="password" required="true">
+
+        {{#if errorMessage }}
+        <div class="error-message">{{ errorMessage }}</div>
+        {{/if}}
+
+        <button>Log in</button>
+
+        <p class="account-message">
+          Don't have an account? <a href="/signup">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

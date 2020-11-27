@@ -1,0 +1,21 @@
+<section class="hero is-dark is-large">
+  <div class="hero-body">
+    <div class="container">
+      <form id="form" action="/signup" method="POST">
+        <h2 class="has-text-weight-medium"><span><i class="fas fa-user-plus"></i></span> Sing up</h2>
+        <label class="has-text-white" for="username">Username</label><br>
+        <input type="text" name="username" id="username" placeholder="Your username" required="true" minlength="3"
+          maxlength="10">
+
+        <label class="has-text-white" for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="********" required="true" minlength="6"
+          maxlength="20">
+
+        <button type="submit">Create account</button>
+        {{#if errorMessage}}
+        <div class="error-message">{{ errorMessage }}</div>
+        {{/if}}
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,64 @@
+<div class="hero is-black is-medium cards-deck-bg">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <h1 class="title"><span class="has-text-info"><i class="far fa-user"></i></span><span
+                            class="has-text-success">
+                            <i class="fas fa-layer-group"></i></span> <span class="has-text-info">{{user}}</span>’s Deck of Cards </h1>
+                    <h2 class="subtitle mt-3"> Build your deck! Design your own custom RPG cards, store and modify them
+                        whenever you want. </h2>
+                    <a class="button is-white is-outlined" href="/cards/my-deck-of-cards/new-card"><span
+                            class="has-text-success">
+                            <i class="far fa-plus-square"></i></span>&nbsp Add new card</a>
+                    <a class="button is-white is-outlined" href="/getInspired"><span
+                            class="has-text-warning">
+                            <i class="far fa-lightbulb"></i></span>&nbsp Get inspired</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+
+            <div class="columns is-multiline">
+                {{#each card}}
+                <div class="column is-3">
+                    <a href="/cards/my-deck-of-cards/details/{{id}}" class="link-more">
+                        <div class="card-front">
+                            <p class="title is-4 card-name">{{name}}</p>
+                            <div class="body-img"><img src="{{avatarBody}}" alt=""></div>
+                            <div class="head-img"><img src="{{avatarHead}}" alt=""></div>
+                            <div class="eyes-img"><img src="{{avatarEyes}}" alt=""></div>
+                            <div class="mouth-img"><img src="{{avatarMouth}}" alt=""></div>
+                            <div class="hair-img"><img src="{{avatarHair}}" alt=""></div>
+                            <div class="helmet-img"><img src="{{avatarHelmet}}" alt=""></div>
+                            <div class="subtitle is-6 race-class">{{race}} {{classe}} </div>
+                            <div class="water-mark subtitle is-6 has-text-grey-light">my-watermark.com</div>
+                        </div>
+                    </a>
+                    <div class="buttons is-grouped is-centered mt-2">
+                        <a class="button is-small is-white is-outlined"
+                            href="/cards/my-deck-of-cards/details/{{id}}">Details &nbsp<span>
+                                <i class="far fa-eye"></i></span></a>
+                        <form action="/cards/my-deck-of-cards/{{id}}/delete" method="POST">
+                            <button class="button is-small is-danger is-outlined">
+                                <span>Delete</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

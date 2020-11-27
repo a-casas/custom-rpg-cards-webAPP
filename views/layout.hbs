@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body class="has-navbar-fixed-top">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logo-icon.svg">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Cards
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/cards/my-deck-of-cards">
+              <span><i class="fas fa-layer-group"></i></span>&nbsp My Deck of Cards
+            </a>
+            <a class="navbar-item" href="/cards">
+              <span><i class="far fa-eye"></i></span>&nbsp Public Gallery
+            </a>
+          </div>
+        </div>
+
+        <a class="navbar-item" href="/battlegrounds">
+          Battlegrounds
+        </a>
+        <a class="navbar-item" href="/getInspired">
+          Get inspired
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-dark" href="/signup">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light" href="/login">
+              Log in
+            </a>
+            <a class="button is-light" href="/logout">
+              Log Out
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+
+    {{{body}}}
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Full-stack Web Application</strong> by <a
+            href="https://github.com/a-casas/custom-RPG-cards">Adrián Casas</a>. Developed barely in a week for the
+          second project at
+          <a href="https://ironhack.com/en">IronHack</a>. I hope you like it! <span><i class="far fa-lg fa-smile-wink"></i></span>
+        </p>
+
+      </div>
+      <div class="">
+        <div class="field is-grouped is-grouped-multiline has-addons has-addons-centered">
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">node.JS</span>
+              <span class="tag is-success">express</span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">mongo</span>
+              <span class="tag is-primary">DB</span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">npm</span>
+              <span class="tag is-danger"></span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Passport</span>
+              <span class="tag is-warning">JS</span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Google Maps</span>
+              <span class="tag is-info">API</span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Handlebars</span>
+              <span class="tag is-warning">JS</span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Axios</span>
+              <span class="tag is-danger"></span>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Rest</span>
+              <span class="tag is-primary">API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.1/image-picker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script> $("select").imagepicker() 
+  </script>
+  <script src="/javascripts/script.js"></script>
+  <script src="/javascripts/printToCanvas.js"></script>
+  <script src="/javascripts/navbarDropDown.js"></script>
+</body>
+
+</html>

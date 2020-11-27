@@ -1,0 +1,226 @@
+<section class="hero is-black">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        <span><i class="far fa-plus-square"></i></span> New Card
+      </h1>
+      <h2 class="subtitle mt-3">
+        Design a custom tailored character. Set the attributes and its unique look!
+      </h2>
+      <a class="button is-white is-outlined" href="/cards/my-deck-of-cards"><span>
+                        <i class="fas fa-arrow-left"></i></span>&nbsp Back</a>
+    </div>
+  </div>
+</section>
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <form action="/cards/{{id}}" method="POST">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-96x96">
+              <img src="/images/various/chalk-face.png" alt="Image">
+            </figure>
+          </div>
+          <div class="box has-background-black">
+            <div class="media-content">
+              <div class="content">
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label has-text-white">Data</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded">
+                        <input class="input is-black" type="text" id="name" name="name" value="{{name}}"
+                          required="true" minlength="1" maxlength="10">
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control is-expanded">
+                        <input class="input is-black" type="text" id="race" name="race"
+                          value="{{race}}" required="true" minlength="2" maxlength="12">
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control is-expanded">
+                        <input class="input is-black" type="text" id="classe" name="classe"
+                          value="{{classe}}" required="true" minlength="2"
+                          maxlength="12">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label has-text-white">Attributes</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded">
+                        <input class="input is-black" type="number" id="hitPoints" name="hitPoints"
+                          value="{{hitPoints}}" required="true" min="0" max="100">
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control is-expanded">
+                        <input class="input is-black" type="number" id="attackPower" name="attackPower"
+                          value="{{attackPower}}" required="true" min="0" max="100">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="media">
+          <div class="media-left">
+            <figure class="image">
+              <img src="/images/various/chalk-armor.png" alt="Image">
+            </figure>
+          </div>
+          <div class="box has-background-black">
+            <div class="media-content">
+              <div class="content">
+                <div class="field">
+                  <label class="label has-text-white">Head</label>
+                  <div class="control">
+                    <select name="avatarHead" id="avatarHead" required="true">
+                      <option value="{{avatarHead}}">Please Select</option>
+                      <option value="/images/Head1.png" data-img-src='/images/Head1.png'></option>
+                      <option value="/images/Head2.png" data-img-src='/images/Head2.png'></option>
+                      <option value="/images/Head3.png" data-img-src='/images/Head3.png'></option>
+                      <option value="/images/Head4.png" data-img-src='/images/Head4.png'></option>
+                      <option value="/images/Head5.png" data-img-src='/images/Head5.png'></option>
+                      <option value="/images/Head6.png" data-img-src='/images/Head6.png'></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">Eyes</label>
+                  <div class="control">
+                    <select name="avatarEyes" id="avatarEyes" required="true">
+                      <option value="{{avatarEyes}}">Please Select</option>
+                      <option value="/images/eyes/eyes1.png" data-img-src='/images/eyes/eyes1.png'></option>
+                      <option value="/images/eyes/eyes2.png" data-img-src='/images/eyes/eyes2.png'></option>
+                      <option value="/images/eyes/eyes3.png" data-img-src='/images/eyes/eyes3.png'></option>
+                      <option value="/images/eyes/eyes4.png" data-img-src='/images/eyes/eyes4.png'></option>
+                      <option value="/images/eyes/eyes5.png" data-img-src='/images/eyes/eyes5.png'></option>
+                      <option value="/images/eyes/eyes6.png" data-img-src='/images/eyes/eyes6.png'></option>
+                      <option value="/images/eyes/eyes7.png" data-img-src='/images/eyes/eyes7.png'></option>
+                      <option value="/images/eyes/eyes8.png" data-img-src='/images/eyes/eyes8.png'></option>
+                      <option value="/images/eyes/eyes9.png" data-img-src='/images/eyes/eyes9.png'></option>
+                      <option value="/images/eyes/eyes10.png" data-img-src='/images/eyes/eyes10.png'></option>
+                      <option value="/images/eyes/eyes11.png" data-img-src='/images/eyes/eyes11.png'></option>
+                      <option value="/images/eyes/eyes12.png" data-img-src='/images/eyes/eyes12.png'></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">Mouth</label>
+                  <div class="control">
+                    <select name="avatarMouth" id="avatarMouth" required="true">
+                      <option value="{{avatarMouth}}">Please Select</option>
+                      <option value="/images/mouth/mouth1.png" data-img-src='/images/mouth/mouth1.png'></option>
+                      <option value="/images/mouth/mouth2.png" data-img-src='/images/mouth/mouth2.png'></option>
+                      <option value="/images/mouth/mouth3.png" data-img-src='/images/mouth/mouth3.png'></option>
+                      <option value="/images/mouth/mouth4.png" data-img-src='/images/mouth/mouth4.png'></option>
+                      <option value="/images/mouth/mouth5.png" data-img-src='/images/mouth/mouth5.png'></option>
+                      <option value="/images/mouth/mouth6.png" data-img-src='/images/mouth/mouth6.png'></option>
+                      <option value="/images/mouth/mouth7.png" data-img-src='/images/mouth/mouth7.png'></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">Hair</label>
+                  <div class="control">
+                    <select name="avatarHair" id="avatarHair" required="true">
+                      <option value="{{avatarHair}}">Please Select</option>
+                      <option value="/images/hair/hair1.png" data-img-src='/images/hair/hair1.png'></option>
+                      <option value="/images/hair/hair2.png" data-img-src='/images/hair/hair2.png'></option>
+                      <option value="/images/hair/hair3.png" data-img-src='/images/hair/hair3.png'></option>
+                      <option value="/images/hair/hair4.png" data-img-src='/images/hair/hair4.png'></option>
+                      <option value="/images/hair/hair5.png" data-img-src='/images/hair/hair5.png'></option>
+                      <option value="/images/hair/hair6.png" data-img-src='/images/hair/hair6.png'></option>
+                      <option value="/images/hair/hair7.png" data-img-src='/images/hair/hair7.png'></option>
+                      <option value="/images/hair/hair8.png" data-img-src='/images/hair/hair8.png'></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">Helmet</label>
+                  <div class="control">
+                    <select name="avatarHelmet" id="avatarHelmet" required="true">
+                      <option value="{{avatarHelmet}}">Please Select</option>
+                      <option value="/images/helmet/helmet1.png" data-img-src='/images/helmet/helmet1.png'></option>
+                      <option value="/images/helmet/helmet2.png" data-img-src='/images/helmet/helmet2.png'></option>
+                      <option value="/images/helmet/helmet3.png" data-img-src='/images/helmet/helmet3.png'></option>
+                      <option value="/images/helmet/helmet4.png" data-img-src='/images/helmet/helmet4.png'></option>
+                      <option value="/images/helmet/helmet5.png" data-img-src='/images/helmet/helmet5.png'></option>
+                      <option value="/images/helmet/helmet6.png" data-img-src='/images/helmet/helmet6.png'></option>
+                      <option value="/images/helmet/helmet7.png" data-img-src='/images/helmet/helmet7.png'></option>
+                      <option value="/images/helmet/helmet8.png" data-img-src='/images/helmet/helmet8.png'></option>
+                      <option value="/images/helmet/helmet9.png" data-img-src='/images/helmet/helmet9.png'></option>
+                      <option value="/images/helmet/helmet10.png" data-img-src='/images/helmet/helmet10.png'></option>
+                      <option value="/images/helmet/helmet11.png" data-img-src='/images/helmet/helmet11.png'></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">Body / Armor</label>
+                  <div class="control">
+                    <select name="avatarBody" id="avatarBody" required="true">
+                      <option value="{{avatarBody}}">Please Select</option>
+                      <option value="/images/body/body1.png" data-img-src='/images/body/body1.png'></option>
+                      <option value="/images/body/body2.png" data-img-src='/images/body/body2.png'></option>
+                      <option value="/images/body/body3.png" data-img-src='/images/body/body3.png'></option>
+                      <option value="/images/body/body4.png" data-img-src='/images/body/body4.png'></option>
+                      <option value="/images/body/body5.png" data-img-src='/images/body/body5.png'></option>
+                      <option value="/images/body/body6.png" data-img-src='/images/body/body6.png'></option>
+                      <option value="/images/body/body7.png" data-img-src='/images/body/body7.png'></option>
+                      <option value="/images/body/body8.png" data-img-src='/images/body/body8.png'></option>
+                      <option value="/images/body/body9.png" data-img-src='/images/body/body9.png'></option>
+                      <option value="/images/body/body10.png" data-img-src='/images/body/body10.png'></option>
+                      <option value="/images/body/body11.png" data-img-src='/images/body/body11.png'></option>
+                      <option value="/images/body/body12.png" data-img-src='/images/body/body12.png'></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label has-text-white">Special Skill</label>
+                  <div class="control">
+                    <select name="specialSkill" id="specialSkill" required="true">
+                      <option value="{{specialSkill}}">Please Select</option>
+                      <option value="/images/skills/skill1.png" data-img-src='/images/skills/skill1.png'></option>
+                      <option value="/images/skills/skill2.png" data-img-src='/images/skills/skill2.png'></option>
+                      <option value="/images/skills/skill3.png" data-img-src='/images/skills/skill3.png'></option>
+                      <option value="/images/skills/skill4.png" data-img-src='/images/skills/skill4.png'></option>
+                      <option value="/images/skills/skill5.png" data-img-src='/images/skills/skill5.png'></option>
+                      <option value="/images/skills/skill6.png" data-img-src='/images/skills/skill6.png'></option>
+                      <option value="/images/skills/skill7.png" data-img-src='/images/skills/skill7.png'></option>
+                      <option value="/images/skills/skill8.png" data-img-src='/images/skills/skill8.png'></option>
+                      <option value="/images/skills/skill9.png" data-img-src='/images/skills/skill9.png'></option>
+                      <option value="/images/skills/skill10.png" data-img-src='/images/skills/skill10.png'></option>
+                      <option value="/images/skills/skill11.png" data-img-src='/images/skills/skill11.png'></option>
+                      <option value="/images/skills/skill12.png" data-img-src='/images/skills/skill12.png'></option>
+                      <option value="/images/skills/skill13.png" data-img-src='/images/skills/skill13.png'></option>
+                      <option value="/images/skills/skill14.png" data-img-src='/images/skills/skill14.png'></option>
+                      {{!-- Skill icons credits https://icon-library.net/icon/skill-icon-19.html --}}
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </article>
+        <section class="section">
+          <div class="container has-text-centered">
+            <button class="button is-success is-outlined" type="submit">Update Card &nbsp <span class="icon is-small">
+                <i class="fas fa-check"></i></span></button>
+          </div>
+        </section>
+      </form>
+    </div>
+  </div>
+</section>
+

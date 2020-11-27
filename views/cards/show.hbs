@@ -1,0 +1,58 @@
+<section class="hero is-dark is-medium card-hero-bg-img3">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div id="html-content-holder">
+                <div class="columns">
+                    <div class="column is-3 is-offset-3">
+                        <div class="card-front">
+                            <p class="title is-4 card-name">{{name}}</p>
+                            <div class="body-img"><img src="{{avatarBody}}" alt=""></div>
+                            <div class="head-img"><img src="{{avatarHead}}" alt=""></div>
+                            <div class="eyes-img"><img src="{{avatarEyes}}" alt=""></div>
+                            <div class="mouth-img"><img src="{{avatarMouth}}" alt=""></div>
+                            <div class="hair-img"><img src="{{avatarHair}}" alt=""></div>
+                            <div class="helmet-img"><img src="{{avatarHelmet}}" alt=""></div>
+                            <div class="subtitle is-6 race-class">{{race}} {{classe}} </div>
+                            <div class="water-mark subtitle is-6 has-text-grey-light">my-watermark.com</div>
+                        </div>
+
+                    </div>
+                    <div class="column is-3">
+                        <div class="card-back">
+                            <div class="skill-img"><img src="{{specialSkill}}" alt=""></div>
+                            <div class="subtitle is-6 hp-ap">{{hitPoints}} {{attackPower}} </div>
+                            <div class="water-mark subtitle is-6 has-text-grey-light">my-watermark.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons is-grouped is-centered">
+                <a class="button is-white is-outlined" href="/cards/my-deck-of-cards"><span>
+                        <i class="fas fa-arrow-left"></i></span>&nbsp Back</a>
+                <a class="button is-white is-outlined" href="/cards/my-deck-of-cards/details/{{id}}/edit">Edit &nbsp<span>
+                        <i class="fas fa-edit"></i></span></a>
+                <form action="/cards/my-deck-of-cards/{{id}}/delete" method="POST">
+                    <button class="button is-danger is-outlined">
+                        <span>Delete</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container has-text-centered">
+        <h3 class="subtitle">
+            Print your cards to play with your friends! Get a <strong>preview</strong> and
+            <strong>download</strong> the image.
+        </h3>
+        <button id="btn-Preview-Image" class="button is-dark" type="button" value="Preview">Preview &nbsp <span class="icon is-small">
+                <i class="fas fa-level-down-alt"></i></span></button>
+        <a id="btn-Convert-Html2Image" class="button is-dark" href="#">Download &nbsp <span class="icon is-small">
+                <i class="fas fa-file-download"></i></span></a>
+        <div id="previewImage"></div>
+    </div>
+</section>

@@ -1,0 +1,241 @@
+
+a {
+  color: #00b7ff;
+}
+
+#form {
+  margin: 30px auto;
+  width: 380px;
+}
+
+#form label {
+  color: #666;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#form input,
+#form button {
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#form button {
+  background: #43a3e6;
+  border: 1px solid #43a3e6;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ease background;
+  width: 100%;
+}
+
+#form button:hover {
+  background: #fff;
+  color: #43a3e6;
+  transition: 0.3s ease background;
+}
+
+.error-message {
+  background: #f02b63;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+
+/* Manage images into forms option selectors */
+ul.thumbnails.image_picker_selector {
+  overflow: auto;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.thumbnails.image_picker_selector ul {
+  overflow: auto;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.thumbnails.image_picker_selector li.group_title {
+  float: none;
+}
+
+ul.thumbnails.image_picker_selector li {
+  margin: 0px 12px 12px 0px;
+  float: left;
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail {
+  padding: 6px;
+  border: 1px solid #ddd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background: #4a4a4a;
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail img {
+  -webkit-user-drag: none;
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail.selected {
+  background: #08c;
+}
+
+#html-content-holder {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Card body builder */
+.body-img {
+  margin-top: 140px;
+}
+
+.head-img {
+  margin-top: -215px;
+}
+.eyes-img {
+  margin-top: -85px;
+}
+.mouth-img {
+  margin-top: -50px;
+}
+
+.hair-img {
+  margin-top: -130px;
+}
+
+.helmet-img {
+  margin-top: -135px;
+  padding-bottom: 110px;
+}
+
+.skill-img {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card-front {
+  background-image: url("/images/card-front.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-back {
+  background-image: url("/images/card-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-name {
+  padding-top: 20px;
+}
+
+.hp-ap {
+  word-spacing: 130px;
+}
+
+.water-mark {
+  padding-top: 20px;
+}
+
+/* Empty card body to receive the result of querying with the API */
+.empty-card {
+  height: 480px;
+  width: 314px;
+  background-image: url("/images/card-front.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* All the .svg background images */
+
+.cards-deck-bg {
+  background-image: url("/images/cards-deck-background.svg");
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.card-hero-bg-img { 
+  background-image: url("/images/battle-background2.svg") ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.card-hero-bg-img3 {
+  background-image: url("/images/battle-background3.svg") ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.battle-hero-bg-img { 
+  background-image: url("/images/battle-background.svg") ;
+  background-position: center bottom;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.bastion-paswword-bg {
+  background-image: url("/images/bastion-password.svg") ;
+  background-position: center bottom;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.battle-bg-home {
+  background-image: url("/images/battle-background-home.svg") ;
+  background-position: center bottom;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.big-battle-bg {
+  background-image: url("/images/big-battle-bg.svg") ;
+  background-position: center bottom;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.bg-head-bg {
+  background-image: url("/images/battlegrounds-head-background.svg") ;
+  background-position: center bottom;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+.get-inspired-head-bg {
+  background-image: url("/images/getinspired-background.svg") ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+
+/* Google Map */
+#map {
+  width: 100%;
+  height: 600px;
+}
