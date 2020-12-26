@@ -28,3 +28,8 @@ Sign up to start designing your cards or, if you prefer, use this account with s
 Link to the app: [RPG Cards Generator](https://rpg-card-generator.herokuapp.com/)
 
 ![home-screenshot](https://user-images.githubusercontent.com/69347464/103155058-1cde6180-4794-11eb-8660-726822c1a556.png)
+
+
+## Note
+
+Due to a sensitive data exposure during the deployment to Heroku, the project has been cloned from another repository that has been marked as private.
